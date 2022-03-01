@@ -1,0 +1,36 @@
+@import '../../styles/colors.scss';
+
+.header {
+    display: flex;
+    height: 8%;
+    padding: 15px;
+    justify-content: space-between;
+
+    &__logo {
+        display: flex;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+
+    }
+    &__line {
+        text-align: center;
+    }
+
+    &__line::before {
+        content: "";
+        height: 1px;
+        width: 30vw;
+        background-color: $font-color;
+        display: inline-block;
+        opacity: .2;
+        position: relative;
+        top: -5px;
+    }
+    span {
+        align-self: center;
+        margin: 0 25px;
+    }
+}

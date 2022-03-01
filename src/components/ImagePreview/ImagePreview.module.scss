@@ -1,0 +1,21 @@
+.preview {
+    width: 15%;
+    min-height: 150px;
+    cursor: pointer;
+}
+
+.img {
+    position: relative;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: 0.3s;
+    z-index: 0;
+    &_selected {
+        opacity: 1;
+        transform: scale(1.3);
+        z-index: 1;
+    }
+}
